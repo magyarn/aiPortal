@@ -1,0 +1,90 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  margin: 0;
+}
+
+nav, .logo {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .block-m {
+    max-height: 1.3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: $white;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+nav {
+  max-width: 100%;
+  background-color: $dark-blue;
+  padding: 0 1rem;
+  margin: 0;
+
+  i {
+    color: $white;
+    font-size: 2rem;
+  }
+
+  .mobile-nav {
+    margin: 1rem 0;
+    @media #{$mq-large} {
+      display: none;
+    }
+  }
+}
+
+a.view-more {
+  color: $turquoise;
+  text-decoration: none;
+}
+
+ul.subnav {
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+  align-items: center;
+  overflow: auto;
+  white-space: nowrap;
+  li {
+    display: inline-block;
+    padding: 1.5rem;
+  }
+}
+
+.tab-lap-nav {
+  display: none;
+  ul {
+    list-style: none;
+    color: $white;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    li {
+      padding: 0rem 3rem;
+      &:first-of-type {
+        padding-left: 0;
+      }
+      input {
+        padding: .5rem;
+        color: white;
+        border-radius: 10rem;
+        background-color: $slate;
+        border: none;
+        &:focus {outline: none;}
+      }
+    }
+  }
+  @media #{$mq-large} {
+    display: block;
+  }
+}

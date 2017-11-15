@@ -1,0 +1,254 @@
+.library {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 990px;
+  @media #{$mq-large} {
+    margin: 0 auto;
+  }
+}
+
+.featured-course {
+  max-width: 990px;
+  margin: 5rem 1rem 0;
+  @media #{$mq-large} {
+    margin: 5rem auto 0;
+  }
+}
+
+.lib-feature {
+  border-radius: $border-radius-all;
+  img {
+    border-radius: $border-radius-top;
+  }
+  p {
+    margin: 0;
+    padding: 0 1rem 1rem;
+    border-left: 1px solid $grey;
+    border-right: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    border-radius: 0 0 5px 5px;
+  }
+  h4 {
+    padding: 1rem;
+    margin: 0;
+    border-left: 1px solid $grey;
+    border-right: 1px solid $grey;
+  }
+}
+
+.course-title-link {
+  color: $black;
+  transition: all .3s;
+  &:hover {
+    color: $turquoise;
+  }
+}
+
+.section-title {
+  @media #{$mq-medium} {
+    text-align: center;
+  }
+  @media #{$mq-large} {
+    text-align: left;
+  }
+}
+
+
+
+.filter {
+  border: .5px solid $grey;
+  border-radius: 30rem;
+  padding: 1rem;
+  background: $white;
+
+}
+
+.library-courses {
+  .course-category {
+    @media #{$mq-medium} {
+      margin: 1rem 7rem;
+    }
+    @media #{$mq-large} {
+      margin: 1rem auto;
+      margin-left: -1rem;
+    }
+    .course-cards {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+
+
+.accordion-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: $medium-grey;
+  span {
+    display: none;
+  }
+  i {
+    margin-right: 1rem;
+  }
+}
+
+.mobile-course-filters {
+  .course-filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    select {
+      line-height: 1.5rem;
+      margin-top: 1rem;
+    }
+  }
+  @media #{$mq-medium} {
+    display: none;
+  }
+}
+
+
+.mobile-course-search {
+  padding: .5rem;
+  border-radius: 10rem;
+  margin: 1rem 1rem 0 0;
+  width: 95%;
+  border: .5px solid $grey;
+}
+
+.course-search {
+  border-radius: 10rem;
+  padding: .5rem 1rem;
+  border: .5px solid $charcoal;
+  &:focus {
+    outline: none;
+  }
+}
+
+.course-filters {
+  display: none;
+  @media #{$mq-medium} {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.load-more {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+}
+
+.featured-paths {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @media #{$mq-medium} {
+    margin: 0 3rem;
+  }
+  @media #{$mq-large} {
+    margin: 0 auto;
+  }
+  .featured-path {
+    width: 100%;
+    margin-bottom: 1rem;
+    background: $white;
+    border: $grey;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius-all;
+    padding: 1rem;
+    @media #{$mq-medium} {
+      margin-right: 1rem;
+      width: 41%;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    @media #{$mq-large} {
+      width: 29%;
+    }
+  }
+}
+
+.path-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .path-photo {
+    max-width: 3rem;
+    margin-right: 1rem;
+  }
+}
+
+.skills {
+  @include flexbox;
+  @include flex-wrap(wrap);
+  .skill {
+    color: $white;
+    vertical-align: top;
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 1rem;
+    border-radius: $border-radius-all;
+    @include flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:first-of-type {
+      background: $green-gradient;
+    }
+    &:nth-of-type(2) {
+      background: $orange-gradient;
+    }
+    &:nth-of-type(3) {
+      background: $blue-gradient;
+    }
+    &:nth-of-type(4) {
+      background: $red-gradient;
+    }
+    &:nth-of-type(5) {
+      background: $purple-gradient;
+    }
+    &:last-of-type {
+      margin-right: 0;
+      background: $turquoise-gradient;
+    }
+    @media #{$mq-medium} {
+      margin-right: 1rem;
+      width: 42.25%;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    @media #{$mq-large} {
+      width: 32.25%;
+      &:nth-of-type(3) {
+        margin-right: 0;
+      }
+    }
+  }
+  @media #{$mq-medium} {
+    justify-content: center;
+  }
+}
+
+.feedback {
+  width: 100%;
+  .feedback-content {
+    @include flexbox;
+    @include flex-direction(column);
+    color: $charcoal;
+    background: $lightgrey;
+    border-radius: $border-radius-all;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    margin-bottom: 5rem;
+  }
+}

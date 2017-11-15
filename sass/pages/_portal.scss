@@ -1,0 +1,160 @@
+.desktop-nav {
+  color: white;
+  text-decoration: none;
+  transition: all .3s;
+  &:hover, &:active {
+    color: $yellow;
+  }
+}
+
+.current-page {
+  color: $yellow;
+}
+
+
+.main {
+  .learning-path {
+    margin-top: -18rem;
+    margin-bottom: 2rem;
+    @media #{$mq-medium} {
+      margin-top: -23rem;
+      margin-bottom: 2rem;
+    }
+    @media #{$mq-large} {
+      margin-top: -25rem;
+      margin-bottom: 4rem;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1, button {
+      z-index: 4;
+    }
+    @media #{$mq-medium} {
+      padding: 4rem 0;
+    }
+
+    h1 {
+      margin: 3rem 1rem;
+      color: $white;
+      text-align: center;
+      line-height: 2.6rem;
+    }
+
+    button.primary {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+canvas.pg-canvas {
+  background: $lp-gradient;
+  margin-top: 3.5rem;
+  width: 100%;
+  height: 20rem;
+  @media #{$mq-medium} {
+    height: 25rem;
+  }
+  @media #{$mq-large} {
+    height: 30rem;
+  }
+}
+
+.courses {
+  margin: 0 auto;
+  max-width: 990px;
+}
+
+.course-category {
+  .category {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  .course-cards {
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0 1rem;
+
+    .course-card {
+      display: inline-block;
+      vertical-align: top;
+      background: $lightgrey;
+      width: 14rem;
+      height: 12.5rem;
+      margin: 0 1rem 1rem 0rem;
+      border-radius: $border-radius-all;
+      box-shadow: $box-shadow;
+
+      .course-title {
+        font-size: .8rem;
+        margin: -.4rem 0 0 .5rem;
+      }
+
+      .course-image {
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: $border-radius-top;
+      }
+
+      .course-details {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 .5rem;
+
+
+        .left-side-info {
+          p {line-height: .6rem;}
+          p:nth-of-type(3) {
+            margin-bottom: 0;
+          }
+          .new-course {
+            color: $white;
+            background: $turquoise;
+            padding: .3rem;
+            font-size: .7rem;
+            max-width: 2rem;
+            border-radius: 5rem;
+            margin: .2rem 0;
+          }
+        }
+
+        .right-side-info {
+          padding-bottom: .25rem;
+          p {line-height: .6rem;}
+          align-self: flex-end;
+          text-align: right;
+          .star {
+            max-height: .8rem;
+            opacity: .5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hollow-star {
+  opacity: .3;
+}
+
+p.course-detail {
+  font-size: .7rem;
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.footer {
+  min-height: 10rem;
+  background-color: $dark-blue;
+}

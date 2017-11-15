@@ -1,0 +1,131 @@
+
+.intro-video {
+  max-width: 990px;
+  margin: 0 auto;
+  position: relative;
+  .bread-crumb {
+      margin: 4.5rem 0 .5rem 1rem;
+      font-size: .8rem;
+      color: $dark-grey;
+      @media #{$mq-large} {
+        margin: 4rem 0 .5rem 0rem;
+      }
+  }
+  .course-video {
+    max-width: 100%;
+    @media #{$mq-large} {
+      border-radius: $border-radius-all;
+    }
+  }
+
+}
+
+
+.star {
+  max-height: .8rem;
+}
+
+.course-main {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 990px;
+}
+
+.course-facts {
+
+  .facts {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .text-facts ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        font-size: .85rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+.save-for-later {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .85rem;
+}
+
+.learning-outcomes {
+  @include flexbox;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .outcome {
+    color: $white;
+    background: $turquoise;
+    padding: 0 .5rem;
+    margin: .25rem;
+    display: inline;
+    border-radius: $border-radius-all;
+    font-size: .75rem;
+  }
+  @media #{$mq-large} {
+    margin: 0 auto;
+  }
+}
+
+#accordion {
+  h3 {
+    margin: 0;
+    background: $medium-grey;
+    padding: 1rem;
+    border-radius: $border-radius-all;
+    &:focus {outline:0;}
+    &:hover {cursor: pointer;}
+
+  }
+  .course-category {
+    .course-cards {
+      margin: 1rem 0 0 0;
+    }
+  }
+}
+
+
+.reviews {
+  padding: 1rem;
+  margin-top: 2rem;
+  background: $lightgrey;
+}
+
+
+
+.review {
+  margin: 1.5rem 0 0;
+  .reviewer-info {
+    @include flexbox;
+    justify-content: flex-start;
+    align-items: flex-start;
+    p:first-of-type {
+      margin-top: 0;
+    }
+    p:nth-of-type(2) {
+      color: $charcoal;
+    }
+    .name-and-date p {
+      padding-left: 1rem;
+      line-height: .5rem;
+    }
+    .profile-pic {
+      max-height: 3rem;
+      border-radius: 10rem;
+    }
+  }
+  .review-text {
+    p {
+      padding-bottom: 1.5rem;
+      border-bottom: .5px solid $grey;
+    }
+  }
+}

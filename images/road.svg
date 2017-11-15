@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="527px" height="259px" viewBox="0 0 527 259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>road</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile-HighFi" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="road">
+            <path d="M5,254 C40,254 276,183 289,148 C302,113 168.461783,97 158,76 C147.538217,55 334,17 339,14 C344,11 327,8 314,6" id="left-line" stroke="#FFFFFF"></path>
+            <path d="M350,257 C388,243 481,190 519,148 C557,106 336,73 311,65 C286,57 378,21 369,12 C360,3 336,3 323,1" id="right-line" stroke="#FFFFFF"></path>
+            <circle id="L1" fill="#FFFFFF" cx="3.5" cy="252.5" r="3.5"></circle>
+            <circle id="L2" fill="#FFFFFF" cx="288.5" cy="139.5" r="3.5"></circle>
+            <circle id="L3" fill="#FFFFFF" cx="158.5" cy="73.5" r="3.5"></circle>
+            <circle id="L4" fill="#FFFFFF" cx="337.5" cy="11.5" r="3.5"></circle>
+            <circle id="R4" fill="#FFFFFF" cx="367.5" cy="12.5" r="3.5"></circle>
+            <circle id="R3" fill="#FFFFFF" cx="307.5" cy="60.5" r="3.5"></circle>
+            <circle id="R2" fill="#FFFFFF" cx="522.5" cy="138.5" r="3.5"></circle>
+            <circle id="R1" fill="#FFFFFF" cx="350.5" cy="255.5" r="3.5"></circle>
+        </g>
+    </g>
+</svg>

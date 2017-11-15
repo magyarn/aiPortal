@@ -1,0 +1,28 @@
+// Vendor
+
+@import "vendor/normalize";
+
+// Base
+
+@import "base/colors";
+@import "base/variables";
+@import "base/mixins";
+
+// Components
+
+@import "components/structure";
+@import "components/typography";
+@import "components/navigation";
+@import "components/buttons";
+
+
+//Pages
+
+@import "pages/portal";
+@import "pages/course";
+@import "pages/library";
+@import "pages/learning-paths";
+
+// Animations
+
+@import "animation/lp-animation";
